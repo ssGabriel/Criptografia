@@ -44,7 +44,7 @@ public class Texto {
 			nTexto[i] = (char) (texto.charAt(i)+cripto.getNumero());			
 			}
 			System.out.println(nTexto);
-			this.texto = nTexto.toString();
+			this.texto = new String(nTexto);
 		}
 		 
 		
