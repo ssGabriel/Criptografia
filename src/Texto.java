@@ -1,3 +1,4 @@
+import sun.security.util.Length;
 
 public class Texto {
 	
@@ -36,22 +37,20 @@ public class Texto {
 	}
 	
 	public void Criptografia (Criptografia cripto) {
-		char[] vetor = this.texto.toCharArray(); 
-		int [] aux = new int[vetor.length];
-		char [] aux2 = new char[vetor.length];
-		char a;
 		
-		for(int i=0;i<vetor.length;i++) {
-			 aux[i] = ((int)vetor[i]);
-			 aux[i] =+ cripto.getNumero();
-			 aux2[i] = a.charAt(aux[i]);
-			
+		char[] nTexto = new char[texto.length()];
+		
+		for(int i=0;i<texto.length();i++) {	
+			nTexto[i] = (char) (texto.charAt(i)+cripto.getNumero());			
+			}
+			System.out.println(nTexto);
+			this.texto = nTexto.toString();
 		}
-		 this.texto = aux.toString();
+		 
 		
 		
 	}
 	
 	
 
-}
+
