@@ -17,6 +17,10 @@ public class Texto {
 	public String getTexto() {
 		return texto;
 	}
+	
+	public String getNome() {
+		return nome;
+	}
 
 
 	public void setTexto(String a) {
